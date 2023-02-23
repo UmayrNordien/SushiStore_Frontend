@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <NavBarVue />
+  <router-view />
 </template>
+
+<script>
+import NavBarVue from './components/NavBar.vue';
+
+export default {
+  components: {
+    NavBarVue
+  }
+}
+</script>
 
 <style>
 #app {
@@ -12,19 +19,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #9EA1D4;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  background: rgb(253, 138, 138);
+  background: linear-gradient(90deg, rgba(253, 138, 138, 1) 0%, rgba(241, 247, 181, 1) 50%, rgba(168, 209, 209, 1) 100%);
+  /* background-image: url(https://i.postimg.cc/T1MY17rv/DALL-E-2023-02-23-15-07-06-Generate-a-high-resolution-image-using-DALL-E-featuring-a-sprawling-Jap.png);
+  background-size: cover !important; */
 }
 </style>
