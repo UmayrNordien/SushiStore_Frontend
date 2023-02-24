@@ -1,5 +1,9 @@
 <template>
-  <div class="admin">
-    <h1>This is an admin page</h1>
+  <div class="container-fluid">
+    
   </div>
 </template>
+
+<script>
+
+</script>

@@ -21,7 +21,7 @@ const routes = [
     path: '/registration',
     name: 'registration',
     component: () => import('../views/RegistrationView.vue')
-  }
+  },
 ]
 
 const router = createRouter({
